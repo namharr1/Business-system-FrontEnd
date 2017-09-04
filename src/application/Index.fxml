@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.IndexController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.IndexController">
    <children>
-      <Text layoutX="265.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello World" />
-      <Button fx:id="button1" layoutX="271.0" layoutY="102.0" mnemonicParsing="false" onAction="#onButton1press" text="test1" />
+      <Text layoutX="114.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Business System">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <GridPane layoutX="126.0" layoutY="134.0" prefHeight="64.0" prefWidth="172.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="168.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="socialSecurityNumberFld" promptText="Social security number" />
+            <PasswordField fx:id="passwordFld" promptText="Password" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="signInBtn" layoutX="245.0" layoutY="204.0" mnemonicParsing="false" onAction="#onSignInButtonPress" text="Sign in" />
+      <Label fx:id="errorLabel" layoutX="100.0" layoutY="92.0" textFill="RED" />
    </children>
 </AnchorPane>

@@ -9,16 +9,28 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 public class IndexController implements Initializable {
 
-	@FXML
-	private Button button1;
+	 @FXML
+	    private TextField socialSecurityNumberFld;
 
-	@FXML
-	void onButton1press(ActionEvent event) {
-		JOptionPane.showMessageDialog(null, "teesting");
-	}
+	    @FXML
+	    private PasswordField passwordFld;
+
+	    @FXML
+	    private Button signInBtn;
+
+	    @FXML
+	    private Label errorLabel;
+
+	    @FXML
+	    void onSignInButtonPress(ActionEvent event) {
+	    	JOptionPane.showMessageDialog(null, "Sign in pressed");
+	    }
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
