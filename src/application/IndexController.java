@@ -35,7 +35,6 @@ public class IndexController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		System.out.println("_________________________" +"\nIndex Controller");
-		System.out.println("Namir är fugazy");
 	}
 
 }
