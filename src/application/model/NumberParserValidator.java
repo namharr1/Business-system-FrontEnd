@@ -5,7 +5,7 @@ package application.model;
  * */
 public class NumberParserValidator {
 	// Long
-	public static boolean parseLong(final String s1) {
+	public boolean parseLong(final String s1) {
 		try {
 			Long.parseLong(s1);
 			return true;
@@ -16,7 +16,7 @@ public class NumberParserValidator {
 	}
 
 	// Double
-	public static boolean parseDouble(final String s1) {
+	public boolean parseDouble(final String s1) {
 		try {
 			Double.parseDouble(s1);
 			return true;
@@ -27,7 +27,7 @@ public class NumberParserValidator {
 	}
 
 	// Integer
-	public static boolean parseInteger(final String s1) {
+	public boolean parseInteger(final String s1) {
 		try {
 			Integer.parseInt(s1);
 			return true;

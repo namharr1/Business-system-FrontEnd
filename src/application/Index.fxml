@@ -26,7 +26,7 @@
           <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField fx:id="socialSecurityNumberFld" promptText="Social security number" />
+            <TextField fx:id="socialSecurityNumberFld" promptText="yyddmm-xxx" />
             <PasswordField fx:id="passwordFld" promptText="Password" GridPane.rowIndex="1" />
          </children>
       </GridPane>
