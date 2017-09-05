@@ -2,7 +2,7 @@ package application.model;
 
 public class Item {
 
-	private long id;
+	private int id;
 	private String name;
 	private long quantity;
 	private double price;
@@ -12,7 +12,7 @@ public class Item {
 	private boolean unpacked;
 	private long totalSold;
 
-	public Item(long id, String name, long quantity, double price, String category, double weight, String supplier,
+	public Item(int id, String name, long quantity, double price, String category, double weight, String supplier,
 			boolean unpacked, long totalSold) {
 		this.id = id;
 		this.name = name;
@@ -25,7 +25,7 @@ public class Item {
 		this.totalSold = totalSold;
 	}
 
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
@@ -95,9 +95,8 @@ public class Item {
 
 	// Add toString just for testing , or when ever you need the information
 	// about the item.
-	@Override
 	public String toString() {
-		return ("ID: " + id + "\n" + "Name: " + name + "\n" + "Qunatity: " + quantity + "\n" + "Price: " + price + "\n"
+		return ("Item:\nID: " + id + "\n" + "Name: " + name + "\n" + "Qunatity: " + quantity + "\n" + "Price: " + price + "\n"
 				+ "Category: " + category + "\n" + "Weight: " + weight + "\n" + "Supplier: " + supplier + "\n"
 				+ "IsUnpacked: " + unpacked + "\n" + "Total Sold: " + totalSold);
 	}
