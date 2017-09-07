@@ -9,8 +9,8 @@ public class AccountValidation {
 	private String password;
 	private String accountStatus;
 	
-	public AccountValidation(long socialSecurtyNumber, String password, String accountStatus) { 
-		this.socialSecurityNumber = socialSecurtyNumber;
+	public AccountValidation(long socialSecurityNumber, String password, String accountStatus) { 
+		this.socialSecurityNumber = socialSecurityNumber;
 		this.password = password;
 		this.accountStatus = accountStatus;
 		
